@@ -1,6 +1,5 @@
-var App = /** @class */ (function () {
-    function App() {
-        return this;
-    }
-    return App;
-}());
+function timer()
+{
+    document.getElementById('time').innerHTML(new Date().getFullYear() + ' ' + new Date().getTime())
+}
+setInterval(timer(), 1)
